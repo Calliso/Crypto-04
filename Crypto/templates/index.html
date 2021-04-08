@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<div class='square2'>
+    <h1>Symmetric key:</h1>
+    {% if sym_key is defined and sym_key|length %}
+    {{sym_key}}
+    {% else %}
+    Symetric key not choosen yet, to endode/decode message select a key first.
+    {% endif %}
+
+</div>
+
+<div class='square2'>
+    <h1>asymetric key:</h1>
+    {% if public is defined and public!='' %}
+    public: <br>
+    {{public}}
+    <br>private<br>
+    {{private}}
+    {% else %}
+    keys not choosen yet, to encode/decode message select a keys first.
+    {% endif %}
+</div>
+
+
+{% endblock content %}

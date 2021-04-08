@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class='square2'>
+    {% if mode == 'asym' %}
+    <h1>Random generated public key:</h1>
+    {{public}}
+    <h1>Random generated private key:</h1>
+    {{public}}
+    {% else %}
+    <h3>{{key}}</h3>
+    {% endif %}
+
+</div>
+
+
+{% endblock content %}

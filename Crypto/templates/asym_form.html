@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="row justify-content-center">
+    <div class="col-md-6 square">
+        <form method="POST" action="{{url_for('set_keys')}}">
+            <div class="form-group">
+                <label for="public_key">Enter public key here</label>
+                <textarea class="form-control" id="public_key" rows="4" name="public_key" required></textarea>
+                <label for="private_key">Enter private key here</label>
+                <textarea class="form-control" id="private_key" rows="8" name="private_key" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Change keys</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock content %}

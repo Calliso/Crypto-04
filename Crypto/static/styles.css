@@ -1,0 +1,25 @@
+body{
+	background-color: #555555;
+}
+
+h1{
+	color: rgb(56, 15, 15);
+}
+
+.square{
+	margin: auto;
+	margin-top: 5%;
+	background: #ffffff;;
+    color: rgb(0, 0, 0);
+	height: auto;
+	padding: 25px;
+  }
+
+
+.square2{
+	word-wrap:break-word;
+	background-color: hsla(305, 0%, 0%, 0.1);
+	text-align: center;
+	color:white;
+	margin:5px;
+}
